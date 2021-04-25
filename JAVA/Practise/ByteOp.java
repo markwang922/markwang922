@@ -27,10 +27,21 @@ public class ByteOp {
         但是当得到第一个操作为false时，其结果就必定是false，这时候就不会再判断第二个操作了。
         */
 
-        int a = 5;//定义一个变量；
-        boolean b = (a<4)&&(a++<10);
-        System.out.println("使用短路逻辑运算符的结果为"+b);
-        System.out.println("a的结果为"+a);  // cause a<4, a++<10 would not be operated, a = 5 still.
-        
+        // int a = 5;//定义一个变量；
+        // boolean b = (a<4)&&(a++<10);
+        // System.out.println("使用短路逻辑运算符的结果为"+b);
+        // System.out.println("a的结果为"+a);  // cause a<4, a++<10 would not be operated, a = 5 still.
+
+        // variable x = (expression) ? value if true : value if false
+
+        int a , b;
+        a = 10;
+        // 如果 a 等于 1 成立，则设置 b 为 20，否则为 30
+        b = (a == 1) ? 20 : 30;
+        System.out.println( "Value of b is : " +  b );
+   
+        // 如果 a 等于 10 成立，则设置 b 为 20，否则为 30
+        b = (a == 10) ? 20 : 30;
+        System.out.println( "Value of b is : " + b );
     }
 }
