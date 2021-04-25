@@ -31,5 +31,6 @@ public class ByteOp {
         boolean b = (a<4)&&(a++<10);
         System.out.println("使用短路逻辑运算符的结果为"+b);
         System.out.println("a的结果为"+a);  // cause a<4, a++<10 would not be operated, a = 5 still.
+        
     }
 }
